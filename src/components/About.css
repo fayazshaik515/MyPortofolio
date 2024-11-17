@@ -1,0 +1,140 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* About Container */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease;
+  background-color: #2a2a2a;
+  margin-top: 10vh;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Image */
+.about-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.profile-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* About Content */
+.about-content {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff3366;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.about-content p:hover {
+  color: #fff;
+}
+
+/* Download Button */
+.download-button {
+  background-color: #ff3366;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #e12b5c;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(255, 51, 102, 0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;  /* Stack items vertically on small screens */
+    align-items: center;  /* Center align content */
+    padding: 20px;
+    margin-top: 5vh;
+  }
+
+  .about-profile {
+    margin-bottom: 20px; /* Add space between image and content */
+  }
+
+  .profile-img {
+    width: 80%;  /* Reduce image size on mobile */
+    max-width: 250px;  /* Set a max-width for mobile devices */
+  }
+
+  .about-content {
+    margin-left: 0;  /* Remove left margin on mobile */
+    text-align: center;  /* Center text */
+  }
+
+  .about-content h2 {
+    font-size: 24px;  /* Reduce font size for mobile */
+  }
+
+  .about-content p {
+    font-size: 14px;  /* Reduce paragraph font size */
+  }
+
+  .download-button {
+    padding: 8px 16px;  /* Adjust button padding for mobile */
+    font-size: 14px;  /* Adjust button font size */
+  }
+}
+

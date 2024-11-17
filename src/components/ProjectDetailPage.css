@@ -1,0 +1,88 @@
+/* General container for the project details */
+.project-detail {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #444;
+    padding: 0 20px;
+  }
+  
+  /* Styling for the project title */
+  .project-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #444; /* New color for title (Pink) */
+  }
+  
+  /* Medium-sized project image */
+  .project-detail img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Movie title, frontend, and backend colors */
+  .project-detail .frontend {
+    color: #ff9800; /* New color for frontend (Amber) */
+    font-weight: bold;
+  }
+  .project-detail .backend {
+    color: #3f51b5; /* New color for backend (Indigo) */
+    font-weight: bold;
+  }
+  
+  /* Buttons styling */
+  .project-detail .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #4caf50; /* New color for buttons (Green) */
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-detail .button:hover {
+    background-color: #388e3c; /* Hover color for buttons (Dark Green) */
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* List items styling */
+  .project-detail ul {
+    list-style-type: none; /* Remove dots */
+    padding: 0;
+  }
+  
+  .project-detail li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-detail img {
+      width: 80%;
+    }
+  
+    .project-detail h1 {
+      font-size: 2em;
+    }
+  
+    .project-detail .button {
+      font-size: 0.9em;
+      padding: 10px 20px;
+    }
+  }
+  
